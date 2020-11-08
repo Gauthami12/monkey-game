@@ -67,6 +67,8 @@ function draw() {
         FoodGroup.setVelocityXEach(0);
         obstaclesGroup.setLifetimeEach(-1);
         FoodGroup.setLifetimeEach(-1);
+        FoodGroup.destroyEach();
+        obstaclesGroup.destroyEach();
     }
   
   stroke("black");
