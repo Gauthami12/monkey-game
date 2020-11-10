@@ -59,6 +59,9 @@ function draw() {
   fill("white");
   text("Score: "+ score, 500,50);        
   
+  if(FoodGroup.isTouching(monkey)){
+    FoodGroup.destroyEach();
+  }
   
     if(obstaclesGroup.isTouching(monkey)){
         ground.velocityX = 0;
